@@ -27,7 +27,18 @@
 .App-link {
   color: #61dafb;
 }
-
+.blog-header{
+  background-color: black;
+  width : 100%;
+  height: 100%;
+  
+}
+.blog-list{
+  width : 100%;
+  height: 100%;
+  text-align: left;
+  border: 1px solid red;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
