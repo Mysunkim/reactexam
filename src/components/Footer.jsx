@@ -1,8 +1,11 @@
-import React from 'react';
+import React , { useContext }from 'react';
+import {ThemeContext} from '../Context/ThemeContext';
 
-
-const Footer = ({isDark,setIsDark}) =>{
-    //app.js에서 isDark,setIsDark를 props로 전달받음
+// const Footer = ({isDark,setIsDark}) =>{
+//     //app.js에서 isDark,setIsDark를 props로 전달받음
+const Footer = () =>{
+    const {isDark,setIsDark} = useContext(ThemeContext);
+    
     const toggleTheme = () =>{
         setIsDark(!isDark);
     };
