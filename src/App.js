@@ -2,6 +2,14 @@ import logo from './logo.svg';
 import react,{useState} from 'react';
 import './App.css';
 
+function Modal(){
+  return (
+  <div className='modal'>
+    <h4>제목</h4>
+    <p>날짜</p>
+    <p>상세내용</p>
+</div>)
+}
 function App() {
   const [list, setList] = useState(['남자코트추천','강남우동맛집','여자코트추천']);
   const [good,setGood] = useState(0);
@@ -38,6 +46,8 @@ function App() {
         <h4>{list[2]}</h4>
         <p>2월 17일 발행</p>
       </div>
+
+      <Modal/>
 
     </>
   );
